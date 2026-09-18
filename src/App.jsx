@@ -433,6 +433,11 @@ function VerifyOtp() {
     });
   };
 
+  const handleSendCodes = (e) => {
+    e.preventDefault();
+    sendOtpCodes();
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setError(null);
